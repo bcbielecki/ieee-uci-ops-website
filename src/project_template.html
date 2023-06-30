@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+		<title>Open Project Space</title>
+		<link rel="icon" href="./assets/ops_logo_favicon.png">
+		<!--Fonts-->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,700&display=swap" rel="stylesheet">
+		<!-- Custom Stylesheet "custom.css" used for Bootstrap 5.3.0 css-->
+		<link rel="stylesheet" href="./css/custom.css" type="text/css">
+		<!-- Bootstrap 5.3.0 JS-->
+		<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	
+<body style="">
+	<!-- ======= Header ======= -->
+    <script src="./js/ops_header.js"></script>
+    <!-- End Header -->
+
+	<div class="container-xxl pj-layout my-4">
+
+
+		<aside class="pj-sidebar p-2">
+			<nav id="project-toc" class="d-flex flex-column">
+				<ul class="nav align-middle, flex-column">
+					<h5 class="mt-2 mb-2 mx-3">Contents</h5>
+
+				  <li class="nav-item">
+					<a class="nav-link" href="#scrollspyHeading1">Really Long Title Barely Fits</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#scrollspyHeading2">Second</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+					<ul class="dropdown-menu">
+					  <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+					  <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+					  <li><hr class="dropdown-divider"></li>
+					  <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+					</ul>
+				  </li>
+				</ul>
+			  </nav>
+		</aside>
+
+
+		<main class="pj-main order-1">
+			<div data-bs-spy="scroll" data-bs-target="#project-toc" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="p-3 rounded-3" tabindex="0">
+				<div class="d-flex flex-row justify-content-between mb-5">
+					<div class="">
+						<h4>Project #</h4>
+						<h1>Project Title</h1>
+					</div>
+					<div class="alert alert-light" role="alert">
+						Last Updated 2023.06.30 <br>
+						By Benjamen Bielecki
+					</div>
+				</div>
+
+				<h2 class="mb-3" id="scrollspyHeading2">Introduction</h2>
+				<p class="mb-5">
+					This next project is a culmination of all that you have learned in communication. 
+					You will transfer data between two Arduino boards and several embedded devices, 
+					using a variety of communication protocols. The goal? Your system will be a full-fledged, 
+					wireless weather station. An outdoor Arduino unit, connected to temperature, humidity, 
+					and light sensors, will transmit its data over radio to the indoor Arduino unit, 
+					which will print this information on a display. Read the primer (sections 2-7), and then proceed
+						to the procedure (section 9) when you are ready to build.
+				</p>
+
+				<h2 class="mb-3" id="scrollspyHeading2">Materials</h2>
+				<p class="mb-5">
+					This next project is a culmination of all that you have learned in communication. 
+					You will transfer data between two Arduino boards and several embedded devices, 
+					using a variety of communication protocols. The goal? Your system will be a full-fledged, 
+					wireless weather station. An outdoor Arduino unit, connected to temperature, humidity, 
+					and light sensors, will transmit its data over radio to the indoor Arduino unit, 
+					which will print this information on a display. Read the primer (sections 2-7), and then proceed
+						to the procedure (section 9) when you are ready to build.
+				</p>
+				
+				<div class="accordion mb-5" id="accordionExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							Accordion Item #1
+						</button>
+						</h2>
+						<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+						</div>
+						</div>
+					</div>
+				</div>
+
+
+				<h4 id="scrollspyHeading3">Third heading</h4>
+				<p>...</p>
+				<h4 id="scrollspyHeading4">Fourth heading</h4>
+				<p>...</p>
+				<h4 id="scrollspyHeading5">Fifth heading</h4>
+				<p></p>
+			</div>
+		</main>
+	</div>
+
+	
+    <footer style="">
+       <span>Website designed by the 2023-2024 Open Project Space Committee <br> CC BY-NC-SA 2023 Institute of Electrical and Electronics Engineers, UC Irvine Branch<span>
+    </footer>
+  </body>
+</html>
+
+<!--Inline troubleshooting: style="border-style: solid; border-width: 2px; outline-style: solid; outline-width: 2px;" -->

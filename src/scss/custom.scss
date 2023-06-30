@@ -1,0 +1,85 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+$primary: #0091e1;
+$secondary: #d1ecfb;
+$grey: #edf0f3;
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Then add additional custom code here
+body {
+    scroll-behavior: smooth;;
+}
+
+
+.pj-layout {
+    display: grid;
+    grid-template-areas:'sidebar main';
+    grid-template-columns: 1fr 4fr;
+    gap: 2rem;
+}
+
+.pj-sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 7rem;
+    height: 100vh;
+    grid-area: sidebar;
+    overflow-y: auto;
+    
+    border-color: $grey;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    //justify-self: left;
+}
+
+@media (max-width: 992px) {
+    .pj-layout {
+        display: grid;
+        grid-template-areas:'main';
+        grid-template-columns: 4fr;
+        gap: 2rem;
+    }
+
+    .pj-sidebar {
+        display: none;
+    }
+
+
+}
+
+.pj-main {
+    grid-area: main;
+    justify-self: stretch;
+    overflow: hidden !important;
+
+    display: grid;
+}
+
+// For readability
+.pj-main p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.pj-sidebar nav a.active{
+
+    background-color: #0091e1 ;
+    color: white;
+}
+
+.pj-sidebar nav a{
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    color: inherit;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
