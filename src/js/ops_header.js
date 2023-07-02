@@ -1,8 +1,8 @@
 document.write(`
-<header class="navbar navbar-expand-lg bg-primary sticky-top"  data-bs-theme="dark">
+<header id="ops-navbar" class="navbar navbar-expand-lg bg-primary sticky-top"  data-bs-theme="dark">
     <nav class="container-xl">
             <a class="navbar-brand" href="#">
-                <img src="./assets/ops_logo_nobg_100ppi.png" width="50px" alt="OPS Logo">
+                <img src="./assets/images/ops_logo_nobg_100ppi.png" width="50px" alt="OPS Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -56,10 +56,16 @@ document.write(`
                 </ul>
                 <form class="d-flex" data-bs-theme="light">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-secondary" type="submit">Search</button>
+                <button class="btn btn-outline-info" type="submit"><i class="bi bi-search"></i></button>
                 </form>
             </div>
     </nav>
 </header>
 
 `)
+
+const today = new Date(); // January == 0, February == 1 ...
+if (today.getMonth() == 5) {
+    document.getElementById("ops-navbar").classList.add('pride');
+};
+
