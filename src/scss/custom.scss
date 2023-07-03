@@ -4,17 +4,45 @@
 // Include any default variable overrides here (though functions won't be available)
 $primary: #0091e1;
 $secondary: #8f939b;
+$success: #12805f;
 $info: #d1ecfb;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f5f7fc;
+$dark: #0c0c0c;
+
+$theme-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  success: $success,
+  info: $info,
+  warning: $warning,
+  danger: $danger,
+  light: $light,
+  dark: $dark,
+  // add any additional color below
+);
+
+$display-font-sizes: (
+  1: 6rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
 
 
 
-$color-mode-type: data;
+$navbar-height: 85px;
+
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Then add additional custom code here
 body {
     scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -29,7 +57,7 @@ body {
     display: block;
 }
 
-.pj-toc {
+.pj-layout .pj-toc {
     position: -webkit-sticky;
     position: sticky;
     top: 7rem;
@@ -45,22 +73,8 @@ body {
     //justify-self: left;
 }
 
-@media (max-width: 992px) {
-    .pj-layout {
-        display: grid;
-        grid-template-areas:'main';
-        grid-template-columns: 4fr;
-        gap: 2rem;
-    }
 
-    .pj-sidebar {
-        display: none;
-    }
-
-
-}
-
-.pj-main {
+.pj-layout .pj-main {
     grid-area: main;
     justify-self: stretch;
     //overflow: hidden !important;
@@ -70,23 +84,23 @@ body {
 
 // For readability
 .pj-main p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.8;
 }
 
 .pj-main code{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.8;
     background-color: $gray-100;
 }
 
 .pj-main ul, ol {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.8;
 }
 
 .pj-main li li {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 2.5;
     margin-left: 1.3rem;
 }
@@ -159,22 +173,6 @@ pre code.pj-code {
     max-width: 450px;
 }
 
-.pj-box {
-    background-color: none;
-    //box-shadow: 0px 8px 15px -3px rgba(0,0,0,0.1);
-
-    padding: 30px;
-    border-radius: 10px;
-
-    border-color: $gray-300;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 15px;
-
-    display: inline;
-
-}
-
 .text-gray {
     color: $gray-600;
 }
@@ -208,11 +206,111 @@ pre code.pj-code {
 }
 
 .footer {
-    background-color: $grey-300;
+    background-color: $gray-300;
+}
+
+.landing-title-box {
+    height: calc(100vh - $navbar-height);
+    width: 100%;
+    position: relative;
+    font-family: 'Beckman', 'Roboto', sans-serif;
+
+    overflow: hidden !important;
+}
+
+.landing-title-box .landing-title-box-background {
+    /* The image used */
+    background-image: url("../assets/images/ops_gallery_1.jpg");
+
+    /* Add the blur effect */
+
+    //Delay 1s, Ease 2s, finish on last keyframe after one iteration
+    animation: blur 2s ease 1s 1 normal forwards;
+    -webkit-animation: blur 2s ease 1s 1 normal forwards;
+    -moz-animation: blur 2s ease 1s 1 normal forwards;
+
+    /* Full height */
+    height: 107%;
+    width: 107%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    //overflow: hidden;
+
+    position: absolute;
+    margin: -15px;
+
+    z-index:-1;
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+    }
+    100% {
+        filter: blur(10px);
+        -webkit-filter: blur(10px);
+        -moz-filter: blur(10px);
+        -o-filter: blur(10px);
+        -ms-filter: blur(10px);
+    }
+  }
+
+.landing-title-box .landing-title-box-title {
+    line-height: 1;
+}
+
+.landing-title-box .landing-title-box-img {
+    width: 25vw; 
+    max-width: 275px; 
+    height: auto;
+}
+
+.landing-advert {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.landing-testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
 }
 
 #ops-navbar {
     box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.24);
+    min-height: $navbar-height;
+}
+
+
+@media (max-width: 992px) {
+    .pj-layout {
+        display: grid;
+        grid-template-areas:'main';
+        grid-template-columns: 4fr;
+        gap: 2rem;
+    }
+
+    .pj-sidebar {
+        display: none;
+    }
+
+    .landing-advert {
+        grid-template-columns: 1fr;
+    }
+
+    .landing-testimonials {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 .pride {
@@ -222,3 +320,4 @@ pre code.pj-code {
 .pride .nav-item > a {
     color: $white !important;
 }
+
