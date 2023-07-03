@@ -26,7 +26,7 @@ document.write(`
                         <li><a class="dropdown-item" href="#">Project 4: RGB Dimmer</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Project 5: iPoduino v2</a></li>
-                        <li><a class="dropdown-item" href="#">Project 6: Weather Station</a></li>
+                        <li><a class="dropdown-item" href="./project_template.html">Project 6: Weather Station</a></li>
                         <li><a class="dropdown-item" href="#">Project 7: 7-Segment Stopwatch</a></li>
                         <li><a class="dropdown-item" href="#">Project 8: 555 Blinker PCB Design</a></li>
                         <li><hr class="dropdown-divider"></li>
