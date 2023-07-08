@@ -12053,7 +12053,7 @@ body {
   top: 7rem;
   max-height: calc(100vh - 85px - 5rem);
   grid-area: sidebar;
-  overflow-y: scroll;
+  overflow-y: auto;
   border-color: #dee2e6;
   border-style: solid;
   border-width: 1px;

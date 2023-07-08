@@ -63,7 +63,7 @@ body {
     top: 7rem;
     max-height: calc(100vh - $navbar-height - 5rem);
     grid-area: sidebar;
-    overflow-y: scroll;
+    overflow-y: auto;
     
     border-color: $gray-300;
     border-style: solid;
