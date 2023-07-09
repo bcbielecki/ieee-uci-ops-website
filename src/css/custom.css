@@ -12083,7 +12083,8 @@ body {
   background-color: #f8f9fa;
 }
 
-.pj-main ul, ol {
+.pj-main ul,
+ol {
   font-size: 1.2rem;
   line-height: 1.8;
 }

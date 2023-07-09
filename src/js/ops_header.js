@@ -57,7 +57,7 @@ document.write(`
                 <a class="bi bi-facebook link-light me-4 fs-5" href="#"></a>
                 <a class="bi bi-instagram link-light me-4 fs-5" href="#"></a>
                 <a class="bi bi-linkedin link-light me-4 fs-5" href="#"></a>
-                <a class="bi bi-discord link-light me-4 fs-5" href="https://discord.gg/87g7NJGP8b"></a>
+                <a class="bi bi-discord link-light me-4 fs-5" href="#"></a>
                 <!-- Setup JS Script to auto-remove Application Button at end of season. Replace with -->
                 <button class="btn btn-outline-info" href="#"><i class="bi bi-pen me-1"></i>Apply Now</button>
                 </form>

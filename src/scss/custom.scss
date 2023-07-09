@@ -12,24 +12,24 @@ $light: #f5f7fc;
 $dark: #0c0c0c;
 
 $theme-colors: (
-  primary: $primary,
-  secondary: $secondary,
-  success: $success,
-  info: $info,
-  warning: $warning,
-  danger: $danger,
-  light: $light,
-  dark: $dark,
-  // add any additional color below
+    primary: $primary,
+    secondary: $secondary,
+    success: $success,
+    info: $info,
+    warning: $warning,
+    danger: $danger,
+    light: $light,
+    dark: $dark,
+    // add any additional color below
 );
 
 $display-font-sizes: (
-  1: 6rem,
-  2: 4.5rem,
-  3: 4rem,
-  4: 3.5rem,
-  5: 3rem,
-  6: 2.5rem
+    1: 6rem,
+    2: 4.5rem,
+    3: 4rem,
+    4: 3.5rem,
+    5: 3rem,
+    6: 2.5rem
 );
 
 $navbar-height: 85px;
@@ -47,7 +47,7 @@ body {
 
 .pj-layout {
     display: grid;
-    grid-template-areas:'sidebar main';
+    grid-template-areas: 'sidebar main';
     grid-template-columns: 1fr 4fr;
     gap: 2rem;
 }
@@ -63,7 +63,7 @@ body {
     max-height: calc(100vh - $navbar-height - 5rem);
     grid-area: sidebar;
     overflow-y: auto;
-    
+
     border-color: $gray-300;
     border-style: solid;
     border-width: 1px;
@@ -92,13 +92,14 @@ body {
     line-height: 1.8;
 }
 
-.pj-main code{
+.pj-main code {
     font-size: 1.2rem;
     line-height: 1.8;
     background-color: $gray-100;
 }
 
-.pj-main ul, ol {
+.pj-main ul,
+ol {
     font-size: 1.2rem;
     line-height: 1.8;
 }
@@ -109,13 +110,13 @@ body {
     margin-left: 1.3rem;
 }
 
-.pj-sidebar nav a.active{
+.pj-sidebar nav a.active {
 
-    background-color: #0091e1 ;
+    background-color: #0091e1;
     color: white;
 }
 
-.pj-sidebar nav a{
+.pj-sidebar nav a {
     display: block;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -153,14 +154,14 @@ body {
 }
 
 .pj-img {
-    float:left;
+    float: left;
     width: 100%;
     max-width: 800px;
 }
 
 .pj-code {
     border-radius: 5px;
-    box-shadow: 0px 5px 4px -3px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 4px -3px rgba(0, 0, 0, 0.1);
 }
 
 pre code.pj-code {
@@ -247,7 +248,7 @@ pre code.pj-code {
     position: absolute;
     margin: -15px;
 
-    z-index:-1;
+    z-index: -1;
 }
 
 @keyframes blur {
@@ -258,6 +259,7 @@ pre code.pj-code {
         -o-filter: blur(0px);
         -ms-filter: blur(0px);
     }
+
     100% {
         filter: blur(10px);
         -webkit-filter: blur(10px);
@@ -265,15 +267,15 @@ pre code.pj-code {
         -o-filter: blur(10px);
         -ms-filter: blur(10px);
     }
-  }
+}
 
 .landing-title-box .landing-title-box-title {
     line-height: 1;
 }
 
 .landing-title-box .landing-title-box-img {
-    width: 25vw; 
-    max-width: 275px; 
+    width: 25vw;
+    max-width: 275px;
     height: auto;
 }
 
@@ -304,7 +306,7 @@ pre code.pj-code {
 
 .timeline-with-icons .timeline-item {
     position: relative;
-}   
+}
 
 .timeline-with-icons .timeline-item:after {
     position: absolute;
@@ -342,7 +344,7 @@ pre code.pj-code {
 @media (max-width: 992px) {
     .pj-layout {
         display: grid;
-        grid-template-areas:'main';
+        grid-template-areas: 'main';
         grid-template-columns: 4fr;
         gap: 2rem;
     }
@@ -362,10 +364,9 @@ pre code.pj-code {
 }
 
 .pride {
-    background: linear-gradient( 89.7deg, rgba(223,0,0,1) 2.7%, rgba(214,91,0,1) 15.1%, rgb(223, 200, 0) 29.5%, rgb(6, 189, 0) 45.8%, rgba(29,255,255,1) 61.5%, rgba(5,17,255,1) 76.4%, rgb(169, 0, 211) 92.4% ) !important;
+    background: linear-gradient(89.7deg, rgba(223, 0, 0, 1) 2.7%, rgba(214, 91, 0, 1) 15.1%, rgb(223, 200, 0) 29.5%, rgb(6, 189, 0) 45.8%, rgba(29, 255, 255, 1) 61.5%, rgba(5, 17, 255, 1) 76.4%, rgb(169, 0, 211) 92.4%) !important;
 }
 
-.pride .nav-item > a {
+.pride .nav-item>a {
     color: $white !important;
 }
-
